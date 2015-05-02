@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import <CoreData/CoreData.h>
+
 @interface CoursesTableViewController : UITableViewController
 
 @property (nonatomic) NSManagedObjectContext *managedObjectContext;
+
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end
