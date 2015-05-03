@@ -10,13 +10,13 @@
 		7C12BEE61AF413A70056CF62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BEE51AF413A70056CF62 /* main.m */; };
 		7C12BEE91AF413A80056CF62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BEE81AF413A80056CF62 /* AppDelegate.m */; };
 		7C12BEEC1AF413A80056CF62 /* PuttingItTogetheriOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BEEA1AF413A80056CF62 /* PuttingItTogetheriOS.xcdatamodeld */; };
-		7C12BEEF1AF413A80056CF62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BEEE1AF413A80056CF62 /* ViewController.m */; };
 		7C12BEF21AF413A80056CF62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C12BEF01AF413A80056CF62 /* Main.storyboard */; };
 		7C12BEF41AF413A80056CF62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C12BEF31AF413A80056CF62 /* Images.xcassets */; };
 		7C12BEF71AF413A80056CF62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C12BEF51AF413A80056CF62 /* LaunchScreen.xib */; };
 		7C12BF031AF413A80056CF62 /* PuttingItTogetheriOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BF021AF413A80056CF62 /* PuttingItTogetheriOSTests.m */; };
 		7C12BF0E1AF415A60056CF62 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BF0D1AF415A60056CF62 /* Course.m */; };
 		7C12BF111AF4169A0056CF62 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12BF101AF4169A0056CF62 /* CoursesTableViewController.m */; };
+		7C7154411AF6DD6E00AC3F43 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7154401AF6DD6E00AC3F43 /* AddCourseViewController.m */; };
 		7CD7804C1AF5145A00548AB5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD7804B1AF5145A00548AB5 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +37,6 @@
 		7C12BEE71AF413A70056CF62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C12BEE81AF413A80056CF62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7C12BEEB1AF413A80056CF62 /* PuttingItTogetheriOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PuttingItTogetheriOS.xcdatamodel; sourceTree = "<group>"; };
-		7C12BEED1AF413A80056CF62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7C12BEEE1AF413A80056CF62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C12BEF11AF413A80056CF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C12BEF31AF413A80056CF62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7C12BEF61AF413A80056CF62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		7C12BF0D1AF415A60056CF62 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		7C12BF0F1AF4169A0056CF62 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
 		7C12BF101AF4169A0056CF62 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
+		7C71543F1AF6DD6E00AC3F43 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		7C7154401AF6DD6E00AC3F43 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
 		7CD7804B1AF5145A00548AB5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -99,8 +99,8 @@
 				7C12BF0D1AF415A60056CF62 /* Course.m */,
 				7C12BF0F1AF4169A0056CF62 /* CoursesTableViewController.h */,
 				7C12BF101AF4169A0056CF62 /* CoursesTableViewController.m */,
-				7C12BEED1AF413A80056CF62 /* ViewController.h */,
-				7C12BEEE1AF413A80056CF62 /* ViewController.m */,
+				7C71543F1AF6DD6E00AC3F43 /* AddCourseViewController.h */,
+				7C7154401AF6DD6E00AC3F43 /* AddCourseViewController.m */,
 				7C12BEF01AF413A80056CF62 /* Main.storyboard */,
 				7C12BEF31AF413A80056CF62 /* Images.xcassets */,
 				7C12BEF51AF413A80056CF62 /* LaunchScreen.xib */,
@@ -238,8 +238,8 @@
 			files = (
 				7C12BF111AF4169A0056CF62 /* CoursesTableViewController.m in Sources */,
 				7C12BEEC1AF413A80056CF62 /* PuttingItTogetheriOS.xcdatamodeld in Sources */,
+				7C7154411AF6DD6E00AC3F43 /* AddCourseViewController.m in Sources */,
 				7C12BEE91AF413A80056CF62 /* AppDelegate.m in Sources */,
-				7C12BEEF1AF413A80056CF62 /* ViewController.m in Sources */,
 				7C12BEE61AF413A70056CF62 /* main.m in Sources */,
 				7C12BF0E1AF415A60056CF62 /* Course.m in Sources */,
 			);

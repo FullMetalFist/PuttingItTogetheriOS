@@ -10,7 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
-@interface CoursesTableViewController : UITableViewController
+#import "AddCourseViewController.h"
+
+@interface CoursesTableViewController : UITableViewController <AddCourseViewControllerDelegate>
 
 @property (nonatomic) NSManagedObjectContext *managedObjectContext;
 

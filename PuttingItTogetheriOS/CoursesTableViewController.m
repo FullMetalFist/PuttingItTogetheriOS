@@ -134,4 +134,18 @@
     return _fetchedResultsController;
 }
 
+#pragma mark -- AddCourseVC delegate methods
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"addCourse"]) {
+        //
+        AddCourseViewController *acvc = (AddCourseViewController *)[segue destinationViewController];
+        acvc.delegate = self;
+        
+        Course *newCourse = (Course *)[NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
+        acvc.course = newCourse;
+    }
+}
+
 @end
