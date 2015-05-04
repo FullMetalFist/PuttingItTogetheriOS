@@ -37,19 +37,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)cancelButton:(id)sender {
     // dismiss and remove the object
-    [self addCourseViewControllerDidCancel:[self course]];
+    //[self addCourseViewControllerDidCancel:[self course]];
 }
 
 - (IBAction)saveButton:(id)sender {
@@ -61,16 +51,16 @@
     [dateFormat setDateFormat:@"yyyy-MM-dd"];
     [self.course setReleaseDate:[dateFormat dateFromString:self.dateField.text]];
     
-    [self addCourseViewControllerDidSave];
+    //[self addCourseViewControllerDidSave];
 }
 
-- (void) addCourseViewControllerDidSave
-{
-    
-}
-
-- (void) addCourseViewControllerDidCancel:(Course *)courseToDrop
-{
-    
-}
+//- (void) addCourseViewControllerDidSave
+//{
+//    
+//}
+//
+//- (void) addCourseViewControllerDidCancel:(Course *)courseToDrop
+//{
+//    
+//}
 @end

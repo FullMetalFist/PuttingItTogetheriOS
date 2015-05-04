@@ -148,4 +148,23 @@
     }
 }
 
+- (void) addCourseViewControllerDidSave
+{
+    NSError *error = nil;
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    if (![context save:&error]) {
+        NSLog(@"Error: %@", error.localizedDescription);
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) addCourseViewControllerDidCancel:(Course *)courseToDrop
+{
+    NSManagedObjectContext *context = self.managedObjectContext;
+    [context deleteObject:courseToDrop];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

@@ -11,14 +11,14 @@
 
 @protocol AddCourseViewControllerDelegate;
 
-
-
-
 @interface AddCourseViewController : UIViewController
 
 @property (nonatomic) Course *course;
-
 @property (nonatomic, weak) id <AddCourseViewControllerDelegate> delegate;
+
+@end
+
+@protocol AddCourseViewControllerDelegate <NSObject>
 
 - (void) addCourseViewControllerDidSave;
 - (void) addCourseViewControllerDidCancel:(Course *)courseToDrop;
